@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "test:smoke-qa": "cross-env Env=qa SiteUrl=ottoviz.ominf.net npx playwright test --grep @smoke",
+    "test:smoke-prod": "cross-env Env=prod SiteUrl=ottoviz.ominf.net npx playwright test --grep @smoke"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/malbaski021/ottometric_assignment.git"

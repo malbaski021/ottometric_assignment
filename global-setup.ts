@@ -13,3 +13,5 @@
 // Starting/stopping external services (e.g., test servers)
 // Reading configuration or global tokens
 // Performing initial API calls to prepare the test environment
+
+//TO USE THIS CLASS, ADD A FUNCTION AND UN-COMMENT IT IN PLATWRIGHT.CONFIG.TS

@@ -12,7 +12,7 @@ import { defineConfig, devices  } from '@playwright/test';
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  globalSetup: require.resolve('./global-setup'), // initial setup before running tests
+  // globalSetup: require.resolve('./global-setup'), // initial setup before running tests
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -21,7 +21,7 @@ export default defineConfig({
   /* Retry on CI only */
   retries: process.env.CI ? 1 : 0,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : 1, // undefined  << for max number of workers
+  workers: process.env.CI ? 1 : 3, // undefined  << for max number of workers
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
     reporter: [
       ['list'],
