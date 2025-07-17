@@ -1,0 +1,994 @@
+# Page snapshot
+
+```yaml
+- button:
+  - img
+- paragraph: "Program:"
+- combobox: Camera System VT1
+- paragraph: "HIL:"
+- combobox: All
+- button
+- button "Dashboards":
+  - paragraph: Dashboards
+- button "Smart Data Collect":
+  - paragraph: Smart Data Collect
+- button "Ingestion":
+  - paragraph: Ingestion
+- button "KPI":
+  - paragraph: KPI
+- button "Ingestion Report":
+  - paragraph: Ingestion Report
+- button "Completeness":
+  - paragraph: Completeness
+- button "Quality":
+  - paragraph: Quality
+- button "Characterization":
+  - paragraph: Characterization
+- button "KPI Sensor":
+  - paragraph: KPI Sensor
+- button "FCM":
+  - paragraph: FCM
+- button "Lanes":
+  - paragraph: Lanes
+- button "Signs":
+  - paragraph: Signs
+- button "SPR Gallery":
+  - paragraph: SPR Gallery
+- button "NL Query":
+  - paragraph: NL Query
+- link "Mail":
+  - /url: mailto:support@ottometric.com
+  - paragraph: Mail
+- button "User account":
+  - paragraph: User account
+- heading "lanes" [level=6]
+- button "Filters":
+  - paragraph: Filters
+- paragraph: "0"
+- paragraph: selected
+- button "Deselect all"
+- group:
+  - button "See details" [disabled]
+- button "Download"
+- button "Table settings"
+- table:
+  - rowgroup:
+    - row "Drive Trial Identification":
+      - columnheader
+      - columnheader "Drive Trial Identification"
+    - row "DTID Description Start Section End Section":
+      - columnheader
+      - columnheader "DTID":
+        - text: DTID
+        - button
+      - columnheader "Description":
+        - text: Description
+        - button
+      - columnheader "Start Section":
+        - text: Start Section
+        - button
+      - columnheader "End Section":
+        - text: End Section
+        - button
+  - rowgroup:
+    - row "6112 CCA_7010_8200001_WRITER_Ottometric_POC_-20240716T090346 120 179":
+      - cell:
+        - checkbox
+      - cell "6112"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240716T090346"
+      - cell "120"
+      - cell "179"
+    - row "6111 CCA_7010_8200001_WRITER_Ottometric_POC_-20240716T090346 60 119":
+      - cell:
+        - checkbox
+      - cell "6111"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240716T090346"
+      - cell "60"
+      - cell "119"
+    - row "6102 CCA_7010_8200001_WRITER_Ottometric_POC_-20240715T140829 120 179":
+      - cell:
+        - checkbox
+      - cell "6102"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240715T140829"
+      - cell "120"
+      - cell "179"
+    - row "6101 CCA_7010_8200001_WRITER_Ottometric_POC_-20240715T140829 60 119":
+      - cell:
+        - checkbox
+      - cell "6101"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240715T140829"
+      - cell "60"
+      - cell "119"
+    - row "6100 CCA_7010_8200001_WRITER_Ottometric_POC_-20240715T140829 0 59":
+      - cell:
+        - checkbox
+      - cell "6100"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240715T140829"
+      - cell "0"
+      - cell "59"
+    - row "6093 CCA_7010_8200001_WRITER_Ottometric_POC_-20240715T120410 180 214":
+      - cell:
+        - checkbox
+      - cell "6093"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240715T120410"
+      - cell "180"
+      - cell "214"
+    - row "6092 CCA_7010_8200001_WRITER_Ottometric_POC_-20240715T120410 120 179":
+      - cell:
+        - checkbox
+      - cell "6092"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240715T120410"
+      - cell "120"
+      - cell "179"
+    - row "6091 CCA_7010_8200001_WRITER_Ottometric_POC_-20240715T120410 60 119":
+      - cell:
+        - checkbox
+      - cell "6091"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240715T120410"
+      - cell "60"
+      - cell "119"
+    - row "6090 CCA_7010_8200001_WRITER_Ottometric_POC_-20240715T120410 0 59":
+      - cell:
+        - checkbox
+      - cell "6090"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240715T120410"
+      - cell "0"
+      - cell "59"
+    - row "6083 CCA_7010_8200001_WRITER_Ottometric_POC_-20240715T101621 180 206":
+      - cell:
+        - checkbox
+      - cell "6083"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240715T101621"
+      - cell "180"
+      - cell "206"
+    - row "6082 CCA_7010_8200001_WRITER_Ottometric_POC_-20240715T101621 120 179":
+      - cell:
+        - checkbox
+      - cell "6082"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240715T101621"
+      - cell "120"
+      - cell "179"
+    - row "6081 CCA_7010_8200001_WRITER_Ottometric_POC_-20240715T101621 60 119":
+      - cell:
+        - checkbox
+      - cell "6081"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240715T101621"
+      - cell "60"
+      - cell "119"
+    - row "6074 CCA_7010_8200001_WRITER_Ottometric_POC_-20240712T134205 240 299":
+      - cell:
+        - checkbox
+      - cell "6074"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240712T134205"
+      - cell "240"
+      - cell "299"
+    - row "6073 CCA_7010_8200001_WRITER_Ottometric_POC_-20240712T134205 180 239":
+      - cell:
+        - checkbox
+      - cell "6073"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240712T134205"
+      - cell "180"
+      - cell "239"
+    - row "6072 CCA_7010_8200001_WRITER_Ottometric_POC_-20240712T134205 120 179":
+      - cell:
+        - checkbox
+      - cell "6072"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240712T134205"
+      - cell "120"
+      - cell "179"
+    - row "6071 CCA_7010_8200001_WRITER_Ottometric_POC_-20240712T134205 60 119":
+      - cell:
+        - checkbox
+      - cell "6071"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240712T134205"
+      - cell "60"
+      - cell "119"
+    - row "6066 CCA_7010_8200001_WRITER_Ottometric_POC_-20240712T100833 360 370":
+      - cell:
+        - checkbox
+      - cell "6066"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240712T100833"
+      - cell "360"
+      - cell "370"
+    - row "6065 CCA_7010_8200001_WRITER_Ottometric_POC_-20240712T100833 300 359":
+      - cell:
+        - checkbox
+      - cell "6065"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240712T100833"
+      - cell "300"
+      - cell "359"
+    - row "6064 CCA_7010_8200001_WRITER_Ottometric_POC_-20240712T100833 240 299":
+      - cell:
+        - checkbox
+      - cell "6064"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240712T100833"
+      - cell "240"
+      - cell "299"
+    - row "6063 CCA_7010_8200001_WRITER_Ottometric_POC_-20240712T100833 180 239":
+      - cell:
+        - checkbox
+      - cell "6063"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240712T100833"
+      - cell "180"
+      - cell "239"
+    - row "6062 CCA_7010_8200001_WRITER_Ottometric_POC_-20240712T100833 120 179":
+      - cell:
+        - checkbox
+      - cell "6062"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240712T100833"
+      - cell "120"
+      - cell "179"
+    - row "6061 CCA_7010_8200001_WRITER_Ottometric_POC_-20240712T100833 60 119":
+      - cell:
+        - checkbox
+      - cell "6061"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240712T100833"
+      - cell "60"
+      - cell "119"
+    - row "6055 CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T121801 300 359":
+      - cell:
+        - checkbox
+      - cell "6055"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T121801"
+      - cell "300"
+      - cell "359"
+    - row "6054 CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T121801 240 299":
+      - cell:
+        - checkbox
+      - cell "6054"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T121801"
+      - cell "240"
+      - cell "299"
+    - row "6053 CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T121801 180 239":
+      - cell:
+        - checkbox
+      - cell "6053"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T121801"
+      - cell "180"
+      - cell "239"
+    - row "6052 CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T121801 120 179":
+      - cell:
+        - checkbox
+      - cell "6052"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T121801"
+      - cell "120"
+      - cell "179"
+    - row "6051 CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T121801 60 119":
+      - cell:
+        - checkbox
+      - cell "6051"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T121801"
+      - cell "60"
+      - cell "119"
+    - row "6050 CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T121801 0 59":
+      - cell:
+        - checkbox
+      - cell "6050"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T121801"
+      - cell "0"
+      - cell "59"
+    - row "6044 CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T093855 240 280":
+      - cell:
+        - checkbox
+      - cell "6044"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T093855"
+      - cell "240"
+      - cell "280"
+    - row "6043 CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T093855 180 239":
+      - cell:
+        - checkbox
+      - cell "6043"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T093855"
+      - cell "180"
+      - cell "239"
+    - row "6042 CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T093855 120 179":
+      - cell:
+        - checkbox
+      - cell "6042"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T093855"
+      - cell "120"
+      - cell "179"
+    - row "6041 CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T093855 60 119":
+      - cell:
+        - checkbox
+      - cell "6041"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T093855"
+      - cell "60"
+      - cell "119"
+    - row "6040 CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T093855 0 59":
+      - cell:
+        - checkbox
+      - cell "6040"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T093855"
+      - cell "0"
+      - cell "59"
+    - row "6034 CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T070639 240 282":
+      - cell:
+        - checkbox
+      - cell "6034"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T070639"
+      - cell "240"
+      - cell "282"
+    - row "6033 CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T070639 180 239":
+      - cell:
+        - checkbox
+      - cell "6033"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T070639"
+      - cell "180"
+      - cell "239"
+    - row "6032 CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T070639 120 179":
+      - cell:
+        - checkbox
+      - cell "6032"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T070639"
+      - cell "120"
+      - cell "179"
+    - row "6031 CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T070639 60 119":
+      - cell:
+        - checkbox
+      - cell "6031"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T070639"
+      - cell "60"
+      - cell "119"
+    - row "6030 CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T070639 0 59":
+      - cell:
+        - checkbox
+      - cell "6030"
+      - cell "CCA_7010_8200001_WRITER_Ottometric_POC_-20240710T070639"
+      - cell "0"
+      - cell "59"
+  - rowgroup:
+    - row "Total - - -":
+      - cell
+      - cell "Total"
+      - cell "-"
+      - cell "-"
+      - cell "-"
+- table:
+  - rowgroup:
+    - row "Lane Present Lateral Position 30m Lateral Position 60m Lateral Position Conical Type Classification Rate Color Host Lane Boundaries White Color Host Lane Boundaries Yellow":
+      - columnheader "Lane Present"
+      - columnheader "Lateral Position 30m"
+      - columnheader "Lateral Position 60m"
+      - columnheader "Lateral Position Conical"
+      - columnheader "Type Classification Rate"
+      - columnheader "Color Host Lane Boundaries White"
+      - columnheader "Color Host Lane Boundaries Yellow"
+    - row "EGO Left EGO Right EGO Left EGO Right EGO Left EGO Right EGO Left EGO Right EGO Left EGO Right EGO Left EGO Right EGO Left EGO Right":
+      - columnheader "EGO Left":
+        - text: EGO Left
+        - button
+      - columnheader "EGO Right":
+        - text: EGO Right
+        - button
+      - columnheader "EGO Left":
+        - text: EGO Left
+        - button
+      - columnheader "EGO Right":
+        - text: EGO Right
+        - button
+      - columnheader "EGO Left":
+        - text: EGO Left
+        - button
+      - columnheader "EGO Right":
+        - text: EGO Right
+        - button
+      - columnheader "EGO Left":
+        - text: EGO Left
+        - button
+      - columnheader "EGO Right":
+        - text: EGO Right
+        - button
+      - columnheader "EGO Left":
+        - text: EGO Left
+        - button
+      - columnheader "EGO Right":
+        - text: EGO Right
+        - button
+      - columnheader "EGO Left":
+        - text: EGO Left
+        - button
+      - columnheader "EGO Right":
+        - text: EGO Right
+        - button
+      - columnheader "EGO Left":
+        - text: EGO Left
+        - button
+      - columnheader "EGO Right":
+        - text: EGO Right
+        - button
+  - rowgroup:
+    - row "86.7% 69.2% 99.9% 100.0% 100.0% 100.0% 99.4% 99.9% 81.1% 65.8% 91.4% 83.4% 100.0% 100.0%":
+      - cell "86.7%"
+      - cell "69.2%"
+      - cell "99.9%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "99.4%"
+      - cell "99.9%"
+      - cell "81.1%"
+      - cell "65.8%"
+      - cell "91.4%"
+      - cell "83.4%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "77.6% 79.9% 99.9% 100.0% 100.0% 100.0% 99.2% 100.0% 66.7% 76.8% 85.7% 88.3% 100.0% 100.0%":
+      - cell "77.6%"
+      - cell "79.9%"
+      - cell "99.9%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "99.2%"
+      - cell "100.0%"
+      - cell "66.7%"
+      - cell "76.8%"
+      - cell "85.7%"
+      - cell "88.3%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "86.8% 85.6% 100.0% 100.0% 100.0% 100.0% 99.7% 98.3% 81.5% 80.8% 96.5% 93.2% 100.0% 100.0%":
+      - cell "86.8%"
+      - cell "85.6%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "99.7%"
+      - cell "98.3%"
+      - cell "81.5%"
+      - cell "80.8%"
+      - cell "96.5%"
+      - cell "93.2%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "91.2% 66.8% 100.0% 100.0% 100.0% 100.0% 99.3% 99.2% 85.1% 57.9% 90.4% 60.1% 100.0% 100.0%":
+      - cell "91.2%"
+      - cell "66.8%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "99.3%"
+      - cell "99.2%"
+      - cell "85.1%"
+      - cell "57.9%"
+      - cell "90.4%"
+      - cell "60.1%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "79.8% 85.7% 99.9% 99.8% 100.0% 100.0% 98.0% 98.7% 72.4% 81.4% 98.1% 86.7% 100.0% 100.0%":
+      - cell "79.8%"
+      - cell "85.7%"
+      - cell "99.9%"
+      - cell "99.8%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "98.0%"
+      - cell "98.7%"
+      - cell "72.4%"
+      - cell "81.4%"
+      - cell "98.1%"
+      - cell "86.7%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "91.5% 93.1% 100.0% 99.4% 100.0% 99.8% 99.9% 94.6% 89.9% 74.2% 95.9% 99.1% 100.0% 100.0%":
+      - cell "91.5%"
+      - cell "93.1%"
+      - cell "100.0%"
+      - cell "99.4%"
+      - cell "100.0%"
+      - cell "99.8%"
+      - cell "99.9%"
+      - cell "94.6%"
+      - cell "89.9%"
+      - cell "74.2%"
+      - cell "95.9%"
+      - cell "99.1%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "99.3% 99.4% 99.9% 99.2% 100.0% 99.7% 99.5% 95.2% 97.9% 86.1% 99.5% 99.8% 100.0% 100.0%":
+      - cell "99.3%"
+      - cell "99.4%"
+      - cell "99.9%"
+      - cell "99.2%"
+      - cell "100.0%"
+      - cell "99.7%"
+      - cell "99.5%"
+      - cell "95.2%"
+      - cell "97.9%"
+      - cell "86.1%"
+      - cell "99.5%"
+      - cell "99.8%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "95.3% 95.9% 99.8% 99.8% 100.0% 100.0% 98.7% 97.1% 89.1% 91.2% 95.0% 96.8% 100.0% 100.0%":
+      - cell "95.3%"
+      - cell "95.9%"
+      - cell "99.8%"
+      - cell "99.8%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "98.7%"
+      - cell "97.1%"
+      - cell "89.1%"
+      - cell "91.2%"
+      - cell "95.0%"
+      - cell "96.8%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "74.0% 54.0% 100.0% 100.0% 100.0% 100.0% 99.0% 99.8% 60.3% 52.4% 82.8% 67.0% 100.0% 100.0%":
+      - cell "74.0%"
+      - cell "54.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "99.0%"
+      - cell "99.8%"
+      - cell "60.3%"
+      - cell "52.4%"
+      - cell "82.8%"
+      - cell "67.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "90.5% 90.3% 100.0% 99.8% 100.0% 99.8% 100.0% 98.3% 87.7% 88.1% 98.9% 98.5% 100.0% 100.0%":
+      - cell "90.5%"
+      - cell "90.3%"
+      - cell "100.0%"
+      - cell "99.8%"
+      - cell "100.0%"
+      - cell "99.8%"
+      - cell "100.0%"
+      - cell "98.3%"
+      - cell "87.7%"
+      - cell "88.1%"
+      - cell "98.9%"
+      - cell "98.5%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "57.1% 59.6% 99.9% 99.5% 100.0% 99.9% 98.7% 96.9% 53.8% 54.1% 95.0% 94.8% 100.0% 100.0%":
+      - cell "57.1%"
+      - cell "59.6%"
+      - cell "99.9%"
+      - cell "99.5%"
+      - cell "100.0%"
+      - cell "99.9%"
+      - cell "98.7%"
+      - cell "96.9%"
+      - cell "53.8%"
+      - cell "54.1%"
+      - cell "95.0%"
+      - cell "94.8%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "97.0% 87.2% 99.8% 99.6% 100.0% 100.0% 99.2% 96.7% 84.8% 78.5% 97.2% 95.1% 100.0% 100.0%":
+      - cell "97.0%"
+      - cell "87.2%"
+      - cell "99.8%"
+      - cell "99.6%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "99.2%"
+      - cell "96.7%"
+      - cell "84.8%"
+      - cell "78.5%"
+      - cell "97.2%"
+      - cell "95.1%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "91.6% 87.6% 100.0% 99.7% 100.0% 100.0% 99.7% 97.5% 88.5% 79.3% 98.8% 97.5% 100.0% 100.0%":
+      - cell "91.6%"
+      - cell "87.6%"
+      - cell "100.0%"
+      - cell "99.7%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "99.7%"
+      - cell "97.5%"
+      - cell "88.5%"
+      - cell "79.3%"
+      - cell "98.8%"
+      - cell "97.5%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "96.7% 93.9% 100.0% 99.8% 100.0% 99.9% 99.8% 98.7% 92.9% 87.0% 96.9% 95.2% 100.0% 100.0%":
+      - cell "96.7%"
+      - cell "93.9%"
+      - cell "100.0%"
+      - cell "99.8%"
+      - cell "100.0%"
+      - cell "99.9%"
+      - cell "99.8%"
+      - cell "98.7%"
+      - cell "92.9%"
+      - cell "87.0%"
+      - cell "96.9%"
+      - cell "95.2%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "89.8% 87.2% 99.7% 99.8% 99.8% 100.0% 97.9% 99.3% 81.5% 85.1% 90.5% 89.1% 100.0% 100.0%":
+      - cell "89.8%"
+      - cell "87.2%"
+      - cell "99.7%"
+      - cell "99.8%"
+      - cell "99.8%"
+      - cell "100.0%"
+      - cell "97.9%"
+      - cell "99.3%"
+      - cell "81.5%"
+      - cell "85.1%"
+      - cell "90.5%"
+      - cell "89.1%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "77.1% 49.3% 99.9% 99.9% 99.9% 100.0% 98.6% 100.0% 60.8% 45.0% 75.2% 50.3% 100.0% 100.0%":
+      - cell "77.1%"
+      - cell "49.3%"
+      - cell "99.9%"
+      - cell "99.9%"
+      - cell "99.9%"
+      - cell "100.0%"
+      - cell "98.6%"
+      - cell "100.0%"
+      - cell "60.8%"
+      - cell "45.0%"
+      - cell "75.2%"
+      - cell "50.3%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "60.9% 78.9% 100.0% 99.9% 100.0% 100.0% 99.4% 99.2% 56.3% 75.3% 83.5% 88.7% 100.0% 100.0%":
+      - cell "60.9%"
+      - cell "78.9%"
+      - cell "100.0%"
+      - cell "99.9%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "99.4%"
+      - cell "99.2%"
+      - cell "56.3%"
+      - cell "75.3%"
+      - cell "83.5%"
+      - cell "88.7%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "77.7% 72.8% 100.0% 99.9% 100.0% 99.9% 99.6% 99.1% 71.2% 67.7% 84.7% 87.4% 100.0% 100.0%":
+      - cell "77.7%"
+      - cell "72.8%"
+      - cell "100.0%"
+      - cell "99.9%"
+      - cell "100.0%"
+      - cell "99.9%"
+      - cell "99.6%"
+      - cell "99.1%"
+      - cell "71.2%"
+      - cell "67.7%"
+      - cell "84.7%"
+      - cell "87.4%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "69.5% 61.1% 99.9% 99.8% 100.0% 100.0% 99.8% 98.7% 65.5% 53.4% 91.7% 87.9% 100.0% 100.0%":
+      - cell "69.5%"
+      - cell "61.1%"
+      - cell "99.9%"
+      - cell "99.8%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "99.8%"
+      - cell "98.7%"
+      - cell "65.5%"
+      - cell "53.4%"
+      - cell "91.7%"
+      - cell "87.9%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "93.0% 91.4% 99.9% 99.6% 100.0% 99.9% 99.5% 96.9% 90.5% 85.0% 98.2% 98.1% 100.0% 100.0%":
+      - cell "93.0%"
+      - cell "91.4%"
+      - cell "99.9%"
+      - cell "99.6%"
+      - cell "100.0%"
+      - cell "99.9%"
+      - cell "99.5%"
+      - cell "96.9%"
+      - cell "90.5%"
+      - cell "85.0%"
+      - cell "98.2%"
+      - cell "98.1%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "83.2% 80.8% 100.0% 99.9% 100.0% 100.0% 99.9% 97.6% 81.9% 74.6% 97.8% 94.2% 100.0% 100.0%":
+      - cell "83.2%"
+      - cell "80.8%"
+      - cell "100.0%"
+      - cell "99.9%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "99.9%"
+      - cell "97.6%"
+      - cell "81.9%"
+      - cell "74.6%"
+      - cell "97.8%"
+      - cell "94.2%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "79.3% 73.8% 99.7% 99.1% 99.9% 99.6% 98.9% 96.8% 75.8% 63.6% 93.6% 92.4% 100.0% 100.0%":
+      - cell "79.3%"
+      - cell "73.8%"
+      - cell "99.7%"
+      - cell "99.1%"
+      - cell "99.9%"
+      - cell "99.6%"
+      - cell "98.9%"
+      - cell "96.8%"
+      - cell "75.8%"
+      - cell "63.6%"
+      - cell "93.6%"
+      - cell "92.4%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "100.0% 100.0% 100.0% 99.5% 100.0% 99.9% 100.0% 97.3% 97.7% 90.9% 100.0% 100.0% 100.0% 100.0%":
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "99.5%"
+      - cell "100.0%"
+      - cell "99.9%"
+      - cell "100.0%"
+      - cell "97.3%"
+      - cell "97.7%"
+      - cell "90.9%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "99.7% 98.9% 100.0% 100.0% 100.0% 100.0% 99.9% 99.0% 99.0% 87.2% 99.7% 100.0% 100.0% 100.0%":
+      - cell "99.7%"
+      - cell "98.9%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "99.9%"
+      - cell "99.0%"
+      - cell "99.0%"
+      - cell "87.2%"
+      - cell "99.7%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "93.2% 99.6% 99.8% 99.5% 100.0% 100.0% 99.7% 97.9% 88.8% 88.8% 93.0% 99.9% 100.0% 100.0%":
+      - cell "93.2%"
+      - cell "99.6%"
+      - cell "99.8%"
+      - cell "99.5%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "99.7%"
+      - cell "97.9%"
+      - cell "88.8%"
+      - cell "88.8%"
+      - cell "93.0%"
+      - cell "99.9%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "100.0% 99.1% 100.0% 99.8% 100.0% 99.9% 99.7% 97.9% 96.5% 97.3% 100.0% 99.8% 100.0% 100.0%":
+      - cell "100.0%"
+      - cell "99.1%"
+      - cell "100.0%"
+      - cell "99.8%"
+      - cell "100.0%"
+      - cell "99.9%"
+      - cell "99.7%"
+      - cell "97.9%"
+      - cell "96.5%"
+      - cell "97.3%"
+      - cell "100.0%"
+      - cell "99.8%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "99.9% 100.0% 100.0% 99.7% 100.0% 99.9% 99.8% 97.9% 99.7% 96.7% 99.9% 100.0% 100.0% 100.0%":
+      - cell "99.9%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "99.7%"
+      - cell "100.0%"
+      - cell "99.9%"
+      - cell "99.8%"
+      - cell "97.9%"
+      - cell "99.7%"
+      - cell "96.7%"
+      - cell "99.9%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "98.3% 98.5% 100.0% 99.8% 100.0% 100.0% 100.0% 99.2% 95.8% 97.0% 98.9% 98.9% 100.0% 100.0%":
+      - cell "98.3%"
+      - cell "98.5%"
+      - cell "100.0%"
+      - cell "99.8%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "99.2%"
+      - cell "95.8%"
+      - cell "97.0%"
+      - cell "98.9%"
+      - cell "98.9%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "86.8% 89.8% 99.7% 100.0% 100.0% 100.0% 99.6% 99.9% 82.9% 87.6% 96.4% 94.9% 100.0% 100.0%":
+      - cell "86.8%"
+      - cell "89.8%"
+      - cell "99.7%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "99.6%"
+      - cell "99.9%"
+      - cell "82.9%"
+      - cell "87.6%"
+      - cell "96.4%"
+      - cell "94.9%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "86.0% 85.1% 99.8% 100.0% 100.0% 100.0% 98.3% 100.0% 77.5% 83.6% 86.9% 88.8% 100.0% 100.0%":
+      - cell "86.0%"
+      - cell "85.1%"
+      - cell "99.8%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "98.3%"
+      - cell "100.0%"
+      - cell "77.5%"
+      - cell "83.6%"
+      - cell "86.9%"
+      - cell "88.8%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "97.9% 94.6% 99.2% 99.8% 99.5% 100.0% 95.9% 99.2% 91.9% 92.4% 97.6% 90.9% 100.0% 100.0%":
+      - cell "97.9%"
+      - cell "94.6%"
+      - cell "99.2%"
+      - cell "99.8%"
+      - cell "99.5%"
+      - cell "100.0%"
+      - cell "95.9%"
+      - cell "99.2%"
+      - cell "91.9%"
+      - cell "92.4%"
+      - cell "97.6%"
+      - cell "90.9%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "60.3% 71.5% 100.0% 100.0% 100.0% 100.0% 99.4% 99.9% 51.3% 70.3% 85.8% 88.9% 100.0% 100.0%":
+      - cell "60.3%"
+      - cell "71.5%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "99.4%"
+      - cell "99.9%"
+      - cell "51.3%"
+      - cell "70.3%"
+      - cell "85.8%"
+      - cell "88.9%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "90.0% 84.0% 99.5% 99.4% 99.9% 99.9% 99.0% 99.4% 82.3% 81.5% 91.6% 91.4% 100.0% 100.0%":
+      - cell "90.0%"
+      - cell "84.0%"
+      - cell "99.5%"
+      - cell "99.4%"
+      - cell "99.9%"
+      - cell "99.9%"
+      - cell "99.0%"
+      - cell "99.4%"
+      - cell "82.3%"
+      - cell "81.5%"
+      - cell "91.6%"
+      - cell "91.4%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "92.5% 70.3% 100.0% 100.0% 100.0% 100.0% 99.9% 99.8% 81.9% 68.4% 88.3% 81.1% 100.0% 100.0%":
+      - cell "92.5%"
+      - cell "70.3%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "99.9%"
+      - cell "99.8%"
+      - cell "81.9%"
+      - cell "68.4%"
+      - cell "88.3%"
+      - cell "81.1%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "99.4% 35.0% 99.7% 99.9% 100.0% 100.0% 98.2% 99.8% 91.1% 32.4% 99.5% 75.6% 100.0% 100.0%":
+      - cell "99.4%"
+      - cell "35.0%"
+      - cell "99.7%"
+      - cell "99.9%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "98.2%"
+      - cell "99.8%"
+      - cell "91.1%"
+      - cell "32.4%"
+      - cell "99.5%"
+      - cell "75.6%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "96.6% 95.2% 99.4% 99.9% 99.8% 99.9% 97.0% 99.6% 85.9% 91.7% 84.4% 86.4% 100.0% 100.0%":
+      - cell "96.6%"
+      - cell "95.2%"
+      - cell "99.4%"
+      - cell "99.9%"
+      - cell "99.8%"
+      - cell "99.9%"
+      - cell "97.0%"
+      - cell "99.6%"
+      - cell "85.9%"
+      - cell "91.7%"
+      - cell "84.4%"
+      - cell "86.4%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "89.2% 86.2% 99.9% 100.0% 100.0% 100.0% 98.6% 99.9% 77.2% 83.6% 89.3% 77.9% 100.0% 100.0%":
+      - cell "89.2%"
+      - cell "86.2%"
+      - cell "99.9%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "98.6%"
+      - cell "99.9%"
+      - cell "77.2%"
+      - cell "83.6%"
+      - cell "89.3%"
+      - cell "77.9%"
+      - cell "100.0%"
+      - cell "100.0%"
+    - row "90.3% 78.3% 99.8% 99.9% 99.9% 100.0% 98.8% 99.1% 81.4% 74.4% 88.3% 75.4% 100.0% 100.0%":
+      - cell "90.3%"
+      - cell "78.3%"
+      - cell "99.8%"
+      - cell "99.9%"
+      - cell "99.9%"
+      - cell "100.0%"
+      - cell "98.8%"
+      - cell "99.1%"
+      - cell "81.4%"
+      - cell "74.4%"
+      - cell "88.3%"
+      - cell "75.4%"
+      - cell "100.0%"
+      - cell "100.0%"
+  - rowgroup:
+    - row "88.0% 82.3% 99.9% 99.8% 100.0% 100.0% 99.1% 98.5% 81.9% 76.9% 93.2% 89.1% 100.0% 100.0%":
+      - cell "88.0%"
+      - cell "82.3%"
+      - cell "99.9%"
+      - cell "99.8%"
+      - cell "100.0%"
+      - cell "100.0%"
+      - cell "99.1%"
+      - cell "98.5%"
+      - cell "81.9%"
+      - cell "76.9%"
+      - cell "93.2%"
+      - cell "89.1%"
+      - cell "100.0%"
+      - cell "100.0%"
+- paragraph: Showing 1-38 of 38
+- paragraph: Items per page
+- combobox: "50"
+- paragraph: Go to page
+- spinbutton: "1"
+- button [disabled]
+- button [disabled]
+```
