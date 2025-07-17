@@ -21,7 +21,7 @@ export class NavigationPageElements extends BasePageElements {
     constructor(page: Page) {
         super(page);
 
-        this.logo = page.locator('.header-logo #Layer_1');
+        this.logo = page.locator('div[data-testid="returnToLandingPage"]');
         this.programDropdown = page.locator('div[data-testid="program-picker-menu-select"]');
         this.programItem = page.locator('.MuiMenuItem-root');
 
