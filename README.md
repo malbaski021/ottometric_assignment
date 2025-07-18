@@ -22,7 +22,7 @@ This project is a Playwright-based end-to-end test automation suite for the Otto
 
 ## Project Structure
 ```
-ottometric_homework/
+ottometric_assignment/
 ├── elements/         # Page element locators and base wrappers
 ├── fixtures/         # Playwright fixtures and custom test context
 ├── helpers/          # Environment config and utility functions
