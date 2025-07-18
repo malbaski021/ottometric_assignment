@@ -85,6 +85,7 @@ export class KPIFeaturePage extends KPIFeaturePageElements {
                 _amount = headers.length;
             }
 
+            let dtidCount = 0;
             for (let i = 0; i < _amount; i++){
                 const rowId = await headers[i].locator('td').nth(indexDTID).innerText();
                 const dtid = headers[i].locator('td').first().locator('button[type="button"]');
@@ -95,9 +96,12 @@ export class KPIFeaturePage extends KPIFeaturePageElements {
                     const _class = await event.getAttribute('class');
                     if(_class?.includes(`row-${rowId}.`)) {
                         eventCount++;
+                        dtidCount++;
                     }
                 }
                 await this.click(dtid);
+                console.log(`Count of events for DTID id: ${rowId} is ${dtidCount}`);
+                dtidCount = 0;
             }
         });
         return eventCount;
