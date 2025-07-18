@@ -90,6 +90,7 @@ export class KPIFeaturePage extends KPIFeaturePageElements {
                 const rowId = await headers[i].locator('td').nth(indexDTID).innerText();
                 const dtid = headers[i].locator('td').first().locator('button[type="button"]');
                 await this.click(dtid);
+                await this.waitForIdleStateOfSite();
                 
                 const events = await this.getTableByPositionAndType('left', 'tbody').all();
                 for(let event of events){
@@ -100,6 +101,7 @@ export class KPIFeaturePage extends KPIFeaturePageElements {
                     }
                 }
                 await this.click(dtid);
+                await this.waitForIdleStateOfSite();
                 console.log(`Count of events for DTID id: ${rowId} is ${dtidCount}`);
                 dtidCount = 0;
             }

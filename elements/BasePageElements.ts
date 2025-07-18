@@ -43,7 +43,19 @@ export class BasePageElements {
         await this.page.waitForLoadState('load');
         try { footerCount = await this.page.locator('footer').count(); } catch { }
         if (footerCount > 0) { await this.page.waitForSelector('footer', { timeout: 15000 }); }
-        await this.page.waitForSelector('.loader, .spinner', { state: 'detached', timeout: 15000 });
+        
+        // Wait for any active loaders to disappear with shorter timeout
+        try {
+            // Check if any loader is present first, then wait for it to disappear
+            const loaderSelectors = '.loader, .spinner, .loader.center, .loader-inner.lines, .MuiBox-root.css-1x5ay8e, [class*="loader"]';
+            const loaderCount = await this.page.locator(loaderSelectors).count();
+            if (loaderCount > 0) {
+                await this.page.waitForSelector(loaderSelectors, { state: 'detached', timeout: 3000 });
+            }
+        } catch {
+            // Loaders were not present or already removed
+        }
+        
         await this.page.waitForTimeout(300);
     }
 
