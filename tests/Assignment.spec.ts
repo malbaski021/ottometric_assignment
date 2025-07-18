@@ -1,5 +1,9 @@
 import { test, prefixed } from '../fixtures/fixtures';
 
+
+// Posle izvrsenog Run-a se moze pronaci na https://malbaski021.github.io/ottometric_assignment/
+
+
 test.beforeEach(async ({ basePage, landingPage, navigationPage }) => {
     const url = await basePage.getPropertyValue('url');
     const username = await basePage.getPropertyValue('username');

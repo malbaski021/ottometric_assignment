@@ -107,6 +107,10 @@ export class KPIFeaturePage extends KPIFeaturePageElements {
         return eventCount;
     }
 
+
+    //Ova metoda ima duplikat u KPISensorPage, ostavio sam tako jer nisam pregledao ceo sajt
+    //i ne znam prirodu svih tabela. Pod predpostavkom da su sve tabele na svim stranicam identicne
+    //Ova metoda bi mogla da se prebaci u /heplers pa da bude jedna za sve tabele i da nema duplikata u kodu
     /**
      * Finds the column index by main header and subheader names.
      * @param {string} _columnName - Name of the main column header.

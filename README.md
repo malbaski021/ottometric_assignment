@@ -10,9 +10,14 @@ npm install --save-dev cross-env
 ```
 
 ## Overview
-Assignment tests you may find in ../tests/Assignment.spec.ts
-Online report on 
-
+Assignment tests you may find in: 
+```
+../tests/Assignment.spec.ts
+```
+Online report (GitHub pages) on: 
+```
+https://malbaski021.github.io/ottometric_assignment/
+```
 This project is a Playwright-based end-to-end test automation suite for the Ottoviz web application. It demonstrates advanced QA engineering practices, including:
 - Page Object Model (POM) structure
 - Environment and configuration management

@@ -89,23 +89,14 @@ jobs:
           echo "Redeploy: $(date)" > playwright-report/.redeploy
           touch playwright-report/.nojekyll
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './playwright-report'
+
       - name: Deploy to GitHub Pages
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-
-          git clone --depth 1 --branch gh-pages https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} gh-pages
-
-          rm -rf gh-pages/*
-
-          cp -r playwright-report/* gh-pages/
-
-          touch gh-pages/.nojekyll
-          touch gh-pages/.redeploy
-
-          ls -la gh-pages
-
-          cd gh-pages
-          git add .
-          git commit -m "Update report $(date +'%Y-%m-%d %H:%M:%S')" || echo "⚠️ No changes for commit"
-          git push origin gh-pages
+        id: deployment
+        uses: actions/deploy-pages@v4
