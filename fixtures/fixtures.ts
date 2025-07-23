@@ -5,6 +5,7 @@ import { LandingPage } from '../pages/LandingPage';
 import { NavigationPage } from '../pages/NavigationPage';
 import { KPISensorPage } from '../pages/KPISensorPage';
 import { KPIFeaturePage } from '../pages/KPIFeaturePage';
+import { DetailsPage } from '../pages/DetailsPage';
 
 type MyFixtures = {
     basePage: BasePage; 
@@ -12,6 +13,7 @@ type MyFixtures = {
     navigationPage: NavigationPage; 
     kPISensorPage: KPISensorPage;
     kPIFeaturePage: KPIFeaturePage;
+    detailsPage: DetailsPage;
 };
 
 export const test = base.extend<MyFixtures>({
@@ -29,6 +31,9 @@ export const test = base.extend<MyFixtures>({
     },
     kPIFeaturePage: async ({page}, use) => {
         await use(new KPIFeaturePage(page));
+    },   
+    detailsPage: async ({page}, use) => {
+        await use(new DetailsPage(page));
     },
     
 });

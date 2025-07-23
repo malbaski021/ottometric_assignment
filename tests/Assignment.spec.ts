@@ -1,4 +1,5 @@
 import { test, prefixed } from '../fixtures/fixtures';
+import { DetailsPage } from '../pages/DetailsPage';
 
 
 // Posle izvrsenog Run-a se moze pronaci na https://malbaski021.github.io/ottometric_assignment/
@@ -55,7 +56,9 @@ test(prefixed('@smoke Test 1 / Login > Camera system VT1 > KPI Senzors > FCM > L
 })
 
 // Open the first seven DTIDs and count the FN events in the timeline.
-test(prefixed('@smoke Test 2 / Login > Camera System VI1 > KPI Feature > ISA > Zone1'), async ({ navigationPage, kPIFeaturePage }) => {
+test(prefixed('@smoke Test 2 / Login > Camera System VI1 > KPI Feature > ISA > Zone1'), async ({ context, navigationPage, kPIFeaturePage }) => {
+    const amount = 7;
+    const eventName = 'FN';
     await navigationPage.clickProgramDropdown();
     await navigationPage.choseProgram('Camera System VI1');
     await navigationPage.verifyProgramIsChosen('Camera System VI1');
@@ -64,9 +67,11 @@ test(prefixed('@smoke Test 2 / Login > Camera System VI1 > KPI Feature > ISA > Z
     await kPIFeaturePage.verifyKPIFeaturePageIsOpened('zone1');
     await kPIFeaturePage.sortTableValuesBy('Zone1', 'FALSE');
     await kPIFeaturePage.verifyTableIsSorted('Zone1', 'FALSE');
-    const eventCount = await kPIFeaturePage.collectEventsFromFirstNthDTIDs(7);
-    console.log(`Event count for first 7 DTIDs sorted by FALSE is: ${eventCount}`);
-//Nadam se da sam dobro razumeo zadatak, prebrojao sam eventove u prvih 7 DTID-ia i izbacio kao sumu
-//Nisam siguran da li je mozda trebalo traziti neke false positive rezultate pa njih sabirati
-//Mada su svi FP bili prazni, a (data-testid="PreviewIcon") nisam uspeo da lociram
+    await kPIFeaturePage.selectFirstNthDTIDs(amount);
+    //new tab is opened so we need newPage to pass for test to continue
+    const newPage = await kPIFeaturePage.clickSeeDetailsButton(context);
+    const detailsPage = new DetailsPage(newPage);
+    await detailsPage.verifyDetailsPageIsOpened('Zone1');
+    const count = await detailsPage.countEventsFromTimeLine(eventName);
+    console.log(`Count for first ${amount} DTIDs in timeline for ${eventName} is: ${count}`);
 })

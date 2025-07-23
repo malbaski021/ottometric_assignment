@@ -109,6 +109,40 @@ export class KPIFeaturePage extends KPIFeaturePageElements {
         return eventCount;
     }
 
+    /**
+     * Selects the first N DTIDs by checking their checkboxes in the table.
+     * @param {number} _amount - Number of DTIDs to select.
+     */
+    async selectFirstNthDTIDs(_amount: number) {
+        await test.step(`Selecting first ${_amount} DTIDs`, async () => {
+            await this.waitForIdleStateOfSite();
+            const index = await this.getColumnIndexByHeaderAndSubheader('', '', 'left', 'thead');
+            const headers = await this.getTableByPositionAndType('left', 'tbody').all();
+
+            for (let i = 0; i < _amount; i++){
+                const rowCheckbox = await headers[i].locator('td').nth(index).locator('input[type="checkbox"]');
+                await this.click(rowCheckbox);
+                await this.waitForIdleStateOfSite();
+                
+            }
+        });
+    }
+
+    /**
+     * Clicks the See detail button and waits for the new page event.
+     * @param {any} context - The browser context.
+     * @returns {Promise<Page>} - The newly opened page.
+     */
+    async clickSeeDetailsButton(context: any): Promise<Page> {
+        return await test.step(`Clicking See detail button`, async () => {
+            await this.waitForElementToBeVisibleAndClickable(this.seeDetailButton);
+            const [newPage] = await Promise.all([
+                context.waitForEvent('page'),
+                this.click(this.seeDetailButton),
+            ]);
+            return newPage;
+        });
+    }
 
     //Ova metoda ima duplikat u KPISensorPage, ostavio sam tako jer nisam pregledao ceo sajt
     //i ne znam prirodu svih tabela. Pod predpostavkom da su sve tabele na svim stranicam identicne
