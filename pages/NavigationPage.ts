@@ -3,6 +3,10 @@ import { NavigationPageElements } from '../elements/NavigationPageElements';
 
 export class NavigationPage extends NavigationPageElements {
 
+    /**
+     * Constructor for NavigationPage class.
+     * @param {Page} page - The Playwright Page object.
+     */
     constructor(page: Page) {
         super(page);
     }

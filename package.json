@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test",
-    "test:smoke-qa": "cross-env Env=qa SiteUrl=ottoviz.ominf.net npx playwright test --grep @smoke",
-    "test:smoke-prod": "cross-env Env=prod SiteUrl=ottoviz.ominf.net npx playwright test --grep @smoke"
+    "test:smoke-qa": "cross-env Env=qa SiteUrl={{SITE_URL}} npx playwright test --grep @smoke",
+    "test:smoke-prod": "cross-env Env=prod SiteUrl={{SITE_URL}} npx playwright test --grep @smoke"
   },
   "repository": {
     "type": "git",

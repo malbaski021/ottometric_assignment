@@ -1,4 +1,9 @@
 import { test, prefixed } from '../fixtures/fixtures';
+import { loginTestData } from '../testData';
+
+// NOTE: This file uses centralized database approach for test names
+// Test names are pulled from loginTestData.testScenarios object
+// This is an example of how to centralize test names, not just test data
 
 let username: string;
 let password: string; 
@@ -10,7 +15,7 @@ test.beforeEach(async ({ basePage }) => {
     await basePage.openBrowser(url);
 })
 
-test(prefixed('@smoke Verify that user can login and logout'), async ({ landingPage, navigationPage }) => {
+test(prefixed(loginTestData.testScenarios.loginLogout), async ({ landingPage, navigationPage }) => {
     await landingPage.verifyLandingPageIsOpen();
     await landingPage.enterEmail(username);
     await landingPage.enterPassword(password);
@@ -21,18 +26,18 @@ test(prefixed('@smoke Verify that user can login and logout'), async ({ landingP
     await landingPage.verifyLandingPageIsOpen();
 })
 
-test(prefixed('@smoke Verify that user cant login without email'), async ({ landingPage }) => {
+test(prefixed(loginTestData.testScenarios.loginWithoutEmail), async ({ landingPage }) => {
     await landingPage.verifyLandingPageIsOpen();
     await landingPage.enterEmail('');
     await landingPage.enterPassword(password);
     await landingPage.clickLoginButton();
-    await landingPage.verifyEmailErrorMessage('Email is required, please try again');
+    await landingPage.verifyEmailErrorMessage(loginTestData.errorMessages.emailRequired);
 })
 
-test(prefixed('@smoke Verify that user cant login without password'), async ({ landingPage }) => {
+test(prefixed(loginTestData.testScenarios.loginWithoutPassword), async ({ landingPage }) => {
     await landingPage.verifyLandingPageIsOpen();
     await landingPage.enterEmail(username);
     await landingPage.enterPassword('');
     await landingPage.clickLoginButton();
-    await landingPage.verifyPasswordErrorMessage('Password is required, please try again');
+    await landingPage.verifyPasswordErrorMessage(loginTestData.errorMessages.passwordRequired);
 })

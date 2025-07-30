@@ -55,15 +55,15 @@ export default defineConfig({
       },
     },
 
-    {
-      name: 'firefox',
-      use: { 
-        ...devices['Desktop Firefox'], 
-        launchOptions: {
-          slowMo: 300, 
-        },       
-      },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { 
+    //     ...devices['Desktop Firefox'], 
+    //     launchOptions: {
+    //       slowMo: 300, 
+    //     },       
+    //   },
+    // },
 
     // {
     //   name: 'webkit',

@@ -1,9 +1,11 @@
 import { test, prefixed } from '../fixtures/fixtures';
 import { DetailsPage } from '../pages/DetailsPage';
+import { assignmentTestData } from '../testData';
 
-
-// Posle izvrsenog Run-a se moze pronaci na https://malbaski021.github.io/ottometric_assignment/
-
+// NOTE: This file uses classic test naming approach (hardcoded test names)
+// Test names are NOT extracted to centralized data, they remain as string literals
+// Only test data is pulled from assignmentTestData object
+// This demonstrates flexibility - you can combine centralized data with classic test naming
 
 test.beforeEach(async ({ basePage, landingPage, navigationPage }) => {
     const url = await basePage.getPropertyValue('url');
@@ -15,63 +17,44 @@ test.beforeEach(async ({ basePage, landingPage, navigationPage }) => {
 })
 
 //Check if the sum of values from each row corresponds with the value from the total row (do this for every column in the table).
+//Image: Task1.jpg in the root of the project is visual representation of task
 test(prefixed('@smoke Test 1 / Login > Camera system VT1 > KPI Senzors > FCM > Lanes'), async ({ navigationPage, kPISensorPage }) => {
+    const testData = assignmentTestData.test1;
+    
     await navigationPage.clickProgramDropdown();
-    await navigationPage.choseProgram('Camera System VT1');
-    await navigationPage.verifyProgramIsChosen('Camera System VT1');
+    await navigationPage.choseProgram(testData.program);
+    await navigationPage.verifyProgramIsChosen(testData.program);
     await navigationPage.clickKPIsensor();
-    await navigationPage.clickKPIsensorOption('FCM', 'Lanes');
+    await navigationPage.clickKPIsensorOption(testData.kpiOption.category, testData.kpiOption.option);
     await kPISensorPage.verifyKPISensorPageIsOpened('lanes');
 
-    await kPISensorPage.verifyTotalSumOfColumn('Lane Present', 'EGO Left');
-    await kPISensorPage.verifyTotalSumOfColumn('Lane Present', 'EGO Right');
-
-    await kPISensorPage.verifyTotalSumOfColumn('Lateral Position 30m', 'EGO Left');
-    await kPISensorPage.verifyTotalSumOfColumn('Lateral Position 30m', 'EGO Right');
-
-    await kPISensorPage.verifyTotalSumOfColumn('Lateral Position 60m', 'EGO Left');
-    await kPISensorPage.verifyTotalSumOfColumn('Lateral Position 60m', 'EGO Right');
-
-    await kPISensorPage.verifyTotalSumOfColumn('Lateral Position Conical', 'EGO Left');
-    await kPISensorPage.verifyTotalSumOfColumn('Lateral Position Conical', 'EGO Right');
-
-    await kPISensorPage.verifyTotalSumOfColumn('Type Classification Rate', 'EGO Left');
-    await kPISensorPage.verifyTotalSumOfColumn('Type Classification Rate', 'EGO Right');
-
-    await kPISensorPage.verifyTotalSumOfColumn('Color Host Lane Boundaries White', 'EGO Left');
-    await kPISensorPage.verifyTotalSumOfColumn('Color Host Lane Boundaries White', 'EGO Right');
-
-    await kPISensorPage.verifyTotalSumOfColumn('Color Host Lane Boundaries Yellow', 'EGO Left');
-    await kPISensorPage.verifyTotalSumOfColumn('Color Host Lane Boundaries Yellow', 'EGO Right');
-
+    // Loop through all columns to verify instead of hardcoding each verification
+    for (const columnData of testData.columnsToVerify) {
+        for (const option of columnData.options) {
+            await kPISensorPage.verifyTotalSumOfColumn(columnData.column, option);
+        }
+    }
     await kPISensorPage.finalAssert();
-// U ovom testu dobijam ove rezultate, ne znam da li mozda postoji neka dozvoljena tolerancija ili je mozda drugacije zaokruzivanje na sajtu 
-// Lane Present >> EGO Left: Expected average: 87.5, but got 88
-// Lane Present >> EGO Right: Expected average: 82.4, but got 82.3
-// Lateral Position 60m >> EGO Right: Expected average: 99.9, but got 100
-// Type Classification Rate >> EGO Left: Expected average: 81.5, but got 81.9
-// Type Classification Rate >> EGO Right: Expected average: 77, but got 76.9
-// Color Host Lane Boundaries White >> EGO Left: Expected average: 93.1, but got 93.2
-// Color Host Lane Boundaries White >> EGO Right: Expected average: 89.3, but got 89.1
 })
 
 // Open the first seven DTIDs and count the FN events in the timeline.
+//Image: Task2.jpg and Task3.jpg in the root of the project are visual representation of task
 test(prefixed('@smoke Test 2 / Login > Camera System VI1 > KPI Feature > ISA > Zone1'), async ({ context, navigationPage, kPIFeaturePage }) => {
-    const amount = 7;
-    const eventName = 'FN';
+    const testData = assignmentTestData.test2;
+    
     await navigationPage.clickProgramDropdown();
-    await navigationPage.choseProgram('Camera System VI1');
-    await navigationPage.verifyProgramIsChosen('Camera System VI1');
+    await navigationPage.choseProgram(testData.program);
+    await navigationPage.verifyProgramIsChosen(testData.program);
     await navigationPage.clickKPIfeature();
-    await navigationPage.clickKPIfeatureOption('ISA', 'Zone1');
+    await navigationPage.clickKPIfeatureOption(testData.kpiFeature.category, testData.kpiFeature.option);
     await kPIFeaturePage.verifyKPIFeaturePageIsOpened('zone1');
-    await kPIFeaturePage.sortTableValuesBy('Zone1', 'FALSE');
-    await kPIFeaturePage.verifyTableIsSorted('Zone1', 'FALSE');
-    await kPIFeaturePage.selectFirstNthDTIDs(amount);
+    await kPIFeaturePage.sortTableValuesBy(testData.sortColumn, testData.sortOption);
+    await kPIFeaturePage.verifyTableIsSorted(testData.sortColumn, testData.sortOption);
+    await kPIFeaturePage.selectFirstNthDTIDs(testData.amount);
     //new tab is opened so we need newPage to pass for test to continue
     const newPage = await kPIFeaturePage.clickSeeDetailsButton(context);
     const detailsPage = new DetailsPage(newPage);
     await detailsPage.verifyDetailsPageIsOpened('Zone1');
-    const count = await detailsPage.countEventsFromTimeLine(eventName);
-    console.log(`Count for first ${amount} DTIDs in timeline for ${eventName} is: ${count}`);
+    const count = await detailsPage.countEventsFromTimeLine(testData.eventName);
+    console.log(`Count for first ${testData.amount} DTIDs in timeline for ${testData.eventName} is: ${count}`);
 })
